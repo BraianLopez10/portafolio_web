@@ -1,0 +1,26 @@
+.skill {
+  padding-top: 20px;
+  &__tecnology {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.tecnology__item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 2px;
+  p {
+    margin: 0;
+    font-weight: 300;
+  }
+  img {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+}

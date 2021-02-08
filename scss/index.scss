@@ -1,0 +1,140 @@
+@import "./header.scss";
+@import "./proyect.scss";
+@import "./skill.scss";
+
+:root {
+  --secondary: ##ffd387;
+  --primary-color: #ffbd4a;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f25d65;
+}
+
+.container-app {
+  -webkit-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.75);
+  background-color: #ffd387;
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 375px;
+  max-width: 720px;
+  @media screen and (min-width: 768px) {
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+}
+
+.button {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #181616;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  transform: scale(1);
+  transition: all 0.5s ease;
+  animation: lightAni 0.5s infinite alternate;
+}
+// .button:hover {
+//   transform: scale(1.1);
+// }
+@keyframes lightAni {
+  0% {
+    -webkit-box-shadow: 0px 0px 45px 0px rgba(242, 93, 101, 0);
+    -moz-box-shadow: 0px 0px 45px 0px rgba(242, 93, 101, 0);
+    box-shadow: 0px 0px 45px 0px rgba(242, 93, 101, 0);
+  }
+  100% {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 45px 0px rgba(242, 93, 101, 1);
+    -moz-box-shadow: 0px 0px 45px 0px rgba(242, 93, 101, 1);
+    box-shadow: 0px 0px 45px 0px rgba(242, 93, 101, 1);
+  }
+}
+
+.button-with-icon {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 150px;
+  background-color: #181616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  text-decoration: none;
+  img {
+    background-color: white;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+}
+
+.name-proyect {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.proyect__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffbd4a;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+  }
+  img {
+    margin-left: 10px;
+    width: 30px;
+  }
+  .title-section {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+  }
+}
+.bg-blue {
+  background-color: rgb(78, 169, 197);
+  color: white;
+}
+footer {
+  background-image: url("../images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  h2 {
+    margin-top: 0;
+  }
+  p {
+    max-width: 500px;
+    margin: auto;
+    font-weight: 300;
+  }
+  .footer-message {
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
