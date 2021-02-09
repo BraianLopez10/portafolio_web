@@ -102,18 +102,25 @@ header .icons li a img {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 766px) {
   .proyect-list {
     grid-template-columns: 1fr 1fr;
   }
+  .proyect-list .proyect-item {
+    border-bottom: 2px solid black;
+  }
+  .proyect-list .proyect-item__description {
+    justify-content: space-between;
+  }
 }
 
 .proyect-item {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3px;
 }
 .proyect-item .marco-movil {
   width: 200px;
@@ -158,11 +165,13 @@ header .icons li a img {
 }
 .skill__tecnology {
   margin-top: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
 }
 
 .tecnology__item {
+  justify-content: flex-end;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -279,6 +288,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .proyect__header {

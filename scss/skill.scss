@@ -2,11 +2,13 @@
   padding-top: 20px;
   &__tecnology {
     margin-top: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-content: center;
   }
 }
 .tecnology__item {
+  justify-content: flex-end;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;

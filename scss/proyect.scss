@@ -7,15 +7,23 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  margin-bottom: 20px;
   @media screen and (min-width: 766px) {
     grid-template-columns: 1fr 1fr;
+    .proyect-item {
+      border-bottom: 2px solid black;
+
+      &__description {
+        justify-content: space-between;
+      }
+    }
   }
 }
 .proyect-item {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3px;
   .marco-movil {
     width: 200px;
     height: 400px;
