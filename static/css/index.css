@@ -23,7 +23,8 @@ header .bio__content {
 }
 header .bio__content img {
   border-radius: 10px;
-  width: 100px;
+  width: 150px;
+  object-fit: cover;
   margin: 0 auto;
   display: block;
   margin-top: 40px;
@@ -103,13 +104,13 @@ header .icons li a img {
   grid-template-columns: 1fr;
   justify-content: center;
   margin-bottom: 20px;
+  gap: 50px;
 }
 @media screen and (min-width: 766px) {
   .proyect-list {
+    gap: 5px;
+    row-gap: 45px;
     grid-template-columns: 1fr 1fr;
-  }
-  .proyect-list .proyect-item {
-    border-bottom: 2px solid black;
   }
   .proyect-list .proyect-item__description {
     justify-content: space-between;
@@ -118,8 +119,9 @@ header .icons li a img {
 
 .proyect-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 3px;
 }
 .proyect-item .marco-movil {
@@ -143,7 +145,6 @@ header .icons li a img {
 .proyect-item__description {
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 150px;
 }
 .proyect-item__description p {
@@ -152,8 +153,9 @@ header .icons li a img {
 }
 .proyect-item__buttons {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-grow: 1;
+  margin-top: -30px;
+  justify-content: space-around;
 }
 .proyect-item__buttons a {
   margin: 0;
